@@ -1,0 +1,14 @@
+{
+  "name": "Y",
+  "version": "Y",
+  "description": "hkc",
+  "main": "y",
+  "repository": "y",
+  "author": "y",
+  "license": "y",
+  "private": false,
+  "dependencies": {
+    "react": "^18.2.0",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
