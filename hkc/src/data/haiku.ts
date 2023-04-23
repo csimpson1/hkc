@@ -1,4 +1,5 @@
 import { HaikuList } from "../model/haiku-list/haiku-list";
+import { HAIKU_TYPES } from "../model/haiku/haiku-types";
 
 export const descriptionHaikus: HaikuList = {
     haikus: [
@@ -101,7 +102,8 @@ export const haikus: HaikuList = {
                 line1: ['this is the title:'],
                 line2: ["who said haikus can't have them?"],
                 line3: ['or endnotes either?'],
-            }
+            }, 
+            type: HAIKU_TYPES.TITLE_FOOTNOTES,
         },
         {
             id: 10,
@@ -124,8 +126,9 @@ export const haikus: HaikuList = {
             poem: {
                 line1: ['why just a birth *day*?'],
                 line2: ['celebrate good things year round'],
-                line3: ['love, the Post Office'],
-            }
+                line3: ['love,', 'the Post Office'],
+            },
+            type: HAIKU_TYPES.LETTER,
         },
         {
             id: 13,
@@ -181,7 +184,8 @@ export const haikus: HaikuList = {
                 line1: ['a thousand arm hug'],
                 line2: ['spring welcomes flowers, new fruit', 'when i felt so far away'],
                 line3: ['your heart warms mine'],
-            }
+            },
+            type: HAIKU_TYPES.CHANGING,
         },
         {
             id: 20,
@@ -189,7 +193,8 @@ export const haikus: HaikuList = {
                 line1: ['sparrows, leave nothing!'],
                 line2: ['how much i take in return', 'truly it is my pleasure'],
                 line3: ['a seed for your song!'],
-            }
+            },
+            type: HAIKU_TYPES.CHANGING,
         },
         {
             id: 21,
@@ -253,7 +258,8 @@ export const haikus: HaikuList = {
                 line1: ["who's new shoes are these?", "darling's precious heels"],
                 line2: ['i resent your steps forward'],
                 line3: ['they could have been ours'],
-            }
+            },
+            type: HAIKU_TYPES.CHANGING
         },
         {
             id: 29,

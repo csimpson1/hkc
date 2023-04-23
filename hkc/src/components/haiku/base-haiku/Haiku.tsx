@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { HaikuProps } from "../../model/haiku/haikuProps";
+import { HaikuProps } from "../../../model/haiku/haikuProps";
 
-const Haiku: FC<HaikuProps> = (haiku) => {
+const HaikuComp = (haiku: HaikuProps) : JSX.Element => {
     return (
         <HaikuContainer>
             <div>{haiku.haiku.poem.line1[0]}</div>
@@ -19,4 +19,4 @@ const HaikuContainer = styled.div`
     align-items: center;
 `;
 
-export default Haiku;
+export default HaikuComp;
