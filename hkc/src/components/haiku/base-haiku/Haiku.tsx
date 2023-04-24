@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import styled from "styled-components";
 import { HaikuProps } from "../../../model/haiku/haikuProps";
+import { HaikuContainer } from "../common-haiku-styles";
 
 const HaikuComp = (haiku: HaikuProps) : JSX.Element => {
     return (
@@ -11,12 +11,5 @@ const HaikuComp = (haiku: HaikuProps) : JSX.Element => {
         </HaikuContainer>
     );
 }
-
-const HaikuContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
 
 export default HaikuComp;

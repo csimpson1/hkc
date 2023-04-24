@@ -1,15 +1,17 @@
 import React from 'react';
-import { descriptionHaikus } from '../src/data/haiku'
-import  Haiku  from './components/haiku/base-haiku/Haiku'
+import { descriptionHaikus, haikus } from '../src/data/haiku'
+
 import { getHaikuComponent } from './components/haiku-factory/haiku-factory'
 import './App.css';
 
 
 function App() {
-  // return (
-  //   <Haiku haiku={descriptionHaikus.haikus[0]}></Haiku>
-  // );
-  return getHaikuComponent(descriptionHaikus.haikus[0]);
+
+  return (
+  <div>
+    {getHaikuComponent(descriptionHaikus.haikus[0])}
+    {getHaikuComponent(haikus.haikus[11])}
+  </div>);
 }
 
 export default App;
