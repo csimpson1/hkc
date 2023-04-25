@@ -11,6 +11,7 @@ function App() {
   <div>
     {getHaikuComponent(descriptionHaikus.haikus[0])}
     {getHaikuComponent(haikus.haikus[11])}
+    {getHaikuComponent(haikus.haikus[8])}
   </div>);
 }
 
