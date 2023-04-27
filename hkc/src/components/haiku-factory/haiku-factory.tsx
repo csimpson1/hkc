@@ -7,12 +7,12 @@ import HaikuTitleFootnoteComp from '../haiku/title-footnote-haiku/title-footnote
 
 export const getHaikuComponent = (haiku: Haiku): JSX.Element => {
     switch(haiku.type){
-        case HAIKU_TYPES.CHANGING:
-    
         case HAIKU_TYPES.LETTER:
             return <HaikuLetterComp haiku={haiku}></HaikuLetterComp>
         case HAIKU_TYPES.TITLE_FOOTNOTES:
             return <HaikuTitleFootnoteComp haiku={haiku}></HaikuTitleFootnoteComp>
+        case HAIKU_TYPES.CHANGING:
+            // TODO: Replace this with the component for changing haiku types once created
         default:
             return <HaikuComp haiku={haiku}></HaikuComp>
     }

@@ -1,8 +1,8 @@
-import { HaikuList } from "../model/haiku-list/haiku-list";
+import { Haiku } from "../model/haiku/haiku";
 import { HAIKU_TYPES } from "../model/haiku/haiku-types";
 
-export const descriptionHaikus: HaikuList = {
-    haikus: [
+export const descriptionHaikus: Haiku[] = 
+    [
         {
             id: 1,
             poem: {
@@ -28,10 +28,10 @@ export const descriptionHaikus: HaikuList = {
             }
         }
     ]
-}
 
-export const haikus: HaikuList = {
-    haikus: [
+
+export const haikus: Haiku[] = 
+    [
         {
             id: 1,
             poem: {
@@ -269,6 +269,6 @@ export const haikus: HaikuList = {
                 line3: ['picks your pieces up'],
             }
         }
-    ]
-}
+    ];
+
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { descriptionHaikus, haikus } from '../src/data/haiku'
-
-import { getHaikuComponent } from './components/haiku-factory/haiku-factory'
+import HaikuWrapper from './components/haiku-wrapper/haiku-wrapper';
 import './App.css';
 
 
@@ -9,9 +8,7 @@ function App() {
 
   return (
   <div>
-    {getHaikuComponent(descriptionHaikus.haikus[0])}
-    {getHaikuComponent(haikus.haikus[11])}
-    {getHaikuComponent(haikus.haikus[8])}
+    {haikus.map( poem => <HaikuWrapper haiku={poem}></HaikuWrapper>)}
   </div>);
 }
 
